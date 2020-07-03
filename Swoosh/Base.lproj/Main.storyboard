@@ -148,6 +148,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="hkQ-kY-o9R" eventType="touchUpInside" id="4DS-bB-d91"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="LF0-kL-1K8">
                                 <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -196,25 +199,28 @@
                         <viewLayoutGuide key="safeArea" id="hzo-X6-0jb"/>
                     </view>
                     <navigationItem key="navigationItem" id="a7c-Ie-nhC"/>
+                    <connections>
+                        <segue destination="XBT-6G-LpO" kind="show" identifier="skillVCSegue" id="o9p-xM-zRj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngF-4W-JpV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="A1u-F8-aKY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="829.60000000000002" y="125.61576354679804"/>
+            <point key="canvasLocation" x="870" y="126"/>
         </scene>
         <!--SkillVC-->
         <scene sceneID="CiI-jZ-Bhi">
             <objects>
                 <viewController id="XBT-6G-LpO" customClass="SkillVC" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uC3-Us-dZk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="GGw-Mf-9s0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bGK-9k-oA0">
-                                <rect key="frame" x="10" y="210" width="355" height="50"/>
+                                <rect key="frame" x="10" y="166" width="355" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtX-hP-qd1" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
@@ -241,7 +247,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="xLR-Ze-2Af">
-                                <rect key="frame" x="0.0" y="64" width="370" height="96"/>
+                                <rect key="frame" x="0.0" y="20" width="370" height="96"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kmA-3U-Nhf">
                                         <rect key="frame" x="125.66666666666669" y="0.0" width="119" height="20"/>
@@ -255,7 +261,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yck-8N-cLp" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
-                                <rect key="frame" x="10" y="708" width="355" height="50"/>
+                                <rect key="frame" x="10" y="654" width="355" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.50933754279999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ugm-dP-dKO"/>
@@ -284,10 +290,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1dx-mp-Jnb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uFb-Wu-7ga"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Tm-k2-N9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480.8" y="125.61576354679804"/>
+            <point key="canvasLocation" x="1596" y="126"/>
         </scene>
     </scenes>
     <resources>
